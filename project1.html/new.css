@@ -1,0 +1,557 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    
+}
+
+.first nav {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(69, 67, 87);
+    height: 50px;
+    width: 1517px
+}
+.first nav ul {
+    display: flex;
+    margin-right: 30px;
+}
+
+.first nav ul li img {
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    margin-right: 10px;
+    margin-top: 7px;
+}
+
+.first nav p {
+    color: white;
+    margin-left: 20px;
+    margin-top: 15px;
+    font-size: 20px;
+}
+
+.first nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 17px;
+}
+
+.first nav ul li {
+    list-style: none;
+}
+
+.down {
+    margin-top: 15px;
+    margin-right: 10px;
+}
+
+.second {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 250px auto;
+    height: -90vh;
+}
+
+.second .left {
+    height: 100%;
+    background-color: #ECF0F1;
+}
+
+.second .left ul li a {
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+    color: #626b7A;
+    padding: 10px;
+}
+.second .left ul li a:hover{
+    font-size: 17px;
+}
+
+.second .left ul li {
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.second .right .box {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 15px;
+}
+
+.all {
+    height: 100px;
+    width: 290px;
+    color: white;
+}
+.second .right .box a{
+    text-decoration: none;
+    color: white;
+}
+.second .right .box a h1{
+    margin-top: 15px;
+    margin-left: 20px;
+    font-weight: lighter;
+}
+.second .right .box a p{
+    margin-left: 20px;
+}
+
+.box1 {
+    /* margin-left: 15px; */
+    background-color: rgb(235, 95, 89);
+    border-left: 10px solid rgb(212, 86, 82);
+
+}
+
+.box1:hover{
+    background-color: rgb(212, 86, 82);
+}.box2 {
+    background-color: rgb(106, 198, 224);
+    border-left: 10px solid rgb(93, 182, 206);
+}
+.box2:hover{
+    background-color: rgb(93, 182, 206);
+}
+.box3 {
+    background-color: rgb(255, 187, 103);
+    border-left: 10px solid rgb(235, 161, 71);
+}
+.box3:hover{
+    background-color: rgb(235, 161, 71) ;
+}
+
+.box4 {
+    margin-right: 15px;
+    background-color: rgb(71, 187, 74);
+    border-left: 10px solid rgb(62, 168, 65);
+}
+.box4:hover{
+    background-color:  rgb(62, 168, 65);
+}
+.right .tab {
+    margin-left: 20px;
+    margin-top: 15px;
+    border: 1px solid #e2e8f0;
+
+}
+.right h2 {
+    margin-bottom: 8px;
+}
+
+.right .tab table tr th {
+    padding-right: 190px;
+    padding-left: 20px;
+}
+
+.right .tab table tr td {
+    padding-left: 20px;
+    padding-top: 20px;
+}
+
+
+.right .tab table tr td a {
+    text-decoration: none;
+    color: white;
+}
+.right .tab table{
+    border-collapse: collapse;
+}
+.right .tab table .head {
+    background-color: #626B7A;
+    height: 40px;
+
+}
+.right .tab table tr{
+    border-bottom: 1px solid #e2e8f0;
+    
+}
+.right .tab table tr td{
+    padding-bottom: 10px;
+}
+.right .tab table .head th{
+    color: white;
+    margin-top: 5px;
+
+}
+.twi a{
+    background-color: #4299E1;
+    border-radius: 40px;
+    padding: 5px;
+}
+.twi a:hover{
+    background-color: rgb(21,101,192);
+}
+.fb a{
+    background-color: #51BE99 ;
+    border-radius: 40px;
+    padding: 5px;
+}
+.fb a:hover{
+    background-color: darkgreen;
+}
+.amz a{
+    background-color: #72B159 ;
+    border-radius: 40px;
+    padding: 5px;
+}
+.amz a:hover{
+    background-color: rgb(62, 168, 65);
+}
+.ms a{
+    background-color: #4299E1;
+    border-radius: 40px;
+    padding: 5px;
+}
+.ms a:hover{
+    background-color: rgb(21,101,192);
+}
+.right .prog{
+    /* border: 1px solid #e2e8f0; */
+    margin-top: 15px;
+    margin-right: 20px;
+    margin-left: 20px;
+
+}
+.right .prog .bar{
+    text-align: center;
+    color: white;
+    position: relative;
+    
+
+
+}
+
+.right .prog .bar1{
+    width: 540px;
+    background-color: #4299E1;
+    top: 22px;
+    animation-name: example1;
+    animation-duration: 3s;
+ 
+}   
+#click{
+    display: none;
+}
+@keyframes example1{
+    from{
+        width: 0%;
+        background-color: #4299E1;
+
+    }
+    /* to{
+        width: 45%;
+        background-color: #4299E1;
+    } */
+}
+.right .prog .back{
+    background-color: #ECF0F1;
+    width: 1200px;
+}
+.right .prog .bar2{
+    width: 660px;
+    background-color: #38B2AC;
+    top:-21px ;
+    animation-name: example2;
+    animation-duration: 3s; 
+} 
+@keyframes example2{
+    from{
+        width: 0%;
+    }
+}
+.right .prog .bar3{
+    width: 780px;
+    background-color: #ED8936;
+    top: -21px;
+    animation-name: example2;
+    animation-duration: 3s;
+
+}
+.right .prog .bar4{
+    width: 900px;
+    background-color: #9B2C2C;
+    top: -21px;
+    animation-name: example2;
+    animation-duration: 3s;
+
+}
+
+
+.profile{
+    display: flex;
+    height: 400px;
+    width: 300px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.second .right .profile .pro{
+    border: 1px solid #e2e8f0 ;
+    border-radius: 10px; 
+}
+.right .profile div .wallpaper{
+    height: 200px;
+    width: 300px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.right .profile div .lady{
+    border: 2px solid white;
+    border-radius: 50%;
+    position: relative;
+    top: -40px;
+    left: 110px;
+}
+.right .profile div .man1{
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+    border: 3px solid white;
+    position: relative;
+    top: -40px;
+    left: 110px;
+}
+.right .profile div .man2{
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+    border: 3px solid white;
+    position: relative;
+    top: -40px;
+    left: 110px;
+}
+.right .profile div h3{
+    margin-top: -30px;
+    text-align: center;
+}
+.right .profile div .line{
+    text-align: center;
+}
+
+.frds{
+    margin-top: 30px;
+    color: #626b7A;
+    text-align: center;
+}
+.profile1{
+    margin-left: 20px;
+}
+.profile2{
+    margin-left: 160px;    
+}
+.profile3{
+    margin-left: 160px;   
+}
+
+.third footer{
+    background-color: #3D4852;
+    color: white;
+    height: 60px;
+    padding-top: 5px;
+    padding-left: 10px;
+    width: 1519px;
+}
+.third footer a{
+    text-decoration: none;
+    color: white;
+}
+#click{
+    display: none;
+}
+.timeline{
+    margin-left: 20px;
+    border: 1px solid #e2e8f0;
+    margin-right: 20px;
+}
+.timeline h2{
+    padding-top: 10px;
+    margin-left: 10px;
+}
+.timeline p{
+    margin-left: 10px;
+    color: #626b7A;
+}
+.timeline li{
+    list-style: none;
+}
+.timeline .people li{
+    padding: 20px;
+}
+.timeline .dates{
+    display: flex;
+    justify-content: space-around;
+    margin-left: 70px;
+    padding-bottom: 10px;
+}
+.html{
+    height: 30px;
+    width: 330px;
+    background-color: purple;
+    position: absolute;
+    left: 400px;
+    top: 815px;
+}
+.ui{
+    height: 30px;
+    width: 240px;
+    background-color: rgb(255, 187, 103);
+    position: absolute;
+    top: 870px;
+    left: 730px;
+}
+.js{
+    height: 30px;
+    width: 170px;
+    background-color: #72B159 ;
+    position: absolute;
+    top: 930px;
+    left: 910px;
+
+}
+.php{
+    height: 30px;
+    width: 220px;
+    background-color: #4299E1;
+    position: absolute;
+    top: 990px;
+    left: 970px;
+}
+.css{
+    height: 30px;
+    width: 240px;
+    background-color: palevioletred;
+    position: absolute;
+    top: 1050px;
+    left: 1190px;
+}
+.work{
+    color: white;
+    font-weight: bolder;
+    text-align: center;
+}
+@media screen and (max-width: 768px){
+    .second .right .box{
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+    .box1,.box2{
+        margin-bottom: 15px;
+    }
+    .all{
+        width: 600px;
+    }
+    .html{
+        top: 930px;
+    }
+    .ui{
+        top: 990px;
+    }
+    .js{
+        top: 1055px;
+    }
+    .php{
+        top: 1115px;
+    }
+    .css{
+        top: 1170px;
+    }
+    
+    }
+@media screen and (max-width: 500px){
+    .right{
+        margin-left: 120px;
+    }
+    .second .left{
+        display: none;
+
+    }
+    .second .left a{
+        font-size: x-large;
+    }
+    #click:checked ~ .second .left{
+        position: absolute;
+        z-index: 2;
+        width: 250px;
+        display: block;
+        height: 515vh;
+    }
+    #click:checked ~ .right{
+        margin-left: 0px;
+    }
+    #click:checked ~.third footer{
+        position: relative;
+        top: 134vh;
+        z-index: 3;
+        
+    } 
+    
+    .third footer{
+        position: relative;
+        top: 125vh;
+    } 
+    .second .right .box{
+        display: grid;
+        grid-template-columns: auto;
+    }
+    .box4{
+        margin-top: 15px;
+
+        }
+    .all{
+        width: 1200px;
+    }
+    .second .left{
+        height: 3000px;
+    }
+    .second .right .profile{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 390px;
+        margin-top: 30px;
+    }
+    .second .right .profile .profile1{
+        margin-left: 160px;
+        margin-bottom: 30px;
+
+    } 
+    .second .right .profile .profile2{
+        margin-bottom: 30px;
+    }
+    .tab{
+        width: 1240px;
+    }
+    .prog{
+        width: 1200px;
+    }
+    .timeline{
+        width:1200px;
+    }
+    .html{
+        top: 1160px;
+        left: 280px;
+    }
+    .ui{
+        top: 1215px;
+        left: 615px;
+    }
+    .js{
+        top:1280px;
+        left: 770px;
+    }
+    .php{
+        top: 1340px;
+        left: 860px;
+    }
+    .css{
+        top:1400px;
+        left: 1060px;
+    }
+}
